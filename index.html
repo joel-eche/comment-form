@@ -5,25 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comment form</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
   <main>
     <form action="" method="post">
-      <div>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" required>
-      </div>
-      <div>
-        <label for="comment">Comment</label>
-        <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
-      </div>
-      <div>
-        <label>
-          <input type="checkbox" name="private" id="private" value="private"> Make my comment private
-        </label>
-      </div>
-      <input type="submit" name="submit" value="Submit">
+      <fieldset class="comment-info">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" required>
+        </div>
+        <div>
+          <label for="comment">Comment</label>
+          <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="comment-action">
+        <div>
+          <label>
+            <input type="checkbox" name="private" id="private" value="private"> Make my comment private
+          </label>
+        </div>
+        <input type="submit" name="submit" value="Submit">
+      </fieldset>
     </form>
   </main>
 </body>

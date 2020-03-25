@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+form {
+    width: 25%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.comment-info label, .comment-info input, .comment-info textarea {
+    display: block;
+}
+
+input, textarea {
+    margin-bottom: 15px
+}
+
+input:not([type="checkbox"]):not([type="submit"]), textarea {
+    width: 100%;
+}
